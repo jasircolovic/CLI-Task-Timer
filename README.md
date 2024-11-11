@@ -50,3 +50,81 @@ Technologies Used:
 
     
 A command-line interface (CLI) application that helps users efficiently time and manage tasks, making it easy to track how long they spend on each activity. This tool is especially useful for individuals who want to optimize their workflow, productivity, or study habits.
+
+
+Instructions for Running the Project
+
+    Clone the Repository:
+1. Python:
+
+git clone <repository-link>
+cd cli-task-timer
+
+Install Dependencies:
+
+pip install -r requirements.txt
+
+Run the Task Timer:
+
+python task_timer.py
+
+Commands:
+
+    Start a new task: task_timer start "Task Name"
+    Stop the current task: task_timer stop
+    View task history: task_timer history
+    Export task data: task_timer export --format csv
+
+
+2. C# Version
+
+    Clone the Repository:
+
+git clone <repository-link>
+cd cli-task-timer
+
+Open the Project:
+
+    Open the project in your preferred C# IDE (such as Visual Studio or Rider).
+    Make sure the necessary dependencies (like System.Data.SQLite and Json.NET) are installed via NuGet Package Manager.
+
+Build the Project:
+
+    In Visual Studio: Click on Build > Build Solution.
+    Alternatively, you can run the following command in the terminal:
+
+    dotnet build
+
+Run the Task Timer:
+
+    Run the application through the IDE or use the following command in the terminal:
+
+        dotnet run --project CliTaskTimer
+
+    C# Commands:
+        Start a new task: CliTaskTimer.exe start "Task Name"
+        Stop the current task: CliTaskTimer.exe stop
+        View task history: CliTaskTimer.exe history
+        Export task data: CliTaskTimer.exe export --format json
+
+3. JavaScript Version
+
+    Clone the Repository:
+
+git clone <repository-link>
+cd cli-task-timer
+
+Install Dependencies:
+
+npm install
+
+Run the Task Timer:
+
+node task_timer.js
+
+JavaScript Commands:
+
+    Start a new task: node task_timer.js start "Task Name"
+    Stop the current task: node task_timer.js stop
+    View task history: node task_timer.js history
+    Export task data: node task_timer.js export --format csv
