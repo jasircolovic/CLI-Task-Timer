@@ -1,0 +1,22 @@
+{
+  "School": {
+    "startTime": "2025-01-06T00:45:16.823Z",
+    "totalTime": 9.294,
+    "status": "completed"
+  },
+  "Programming Languages Project": {
+    "startTime": "2025-01-06T00:45:54.873Z",
+    "totalTime": 9.542,
+    "status": "paused"
+  },
+  "Drink": {
+    "startTime": "2025-01-06T00:47:47.177Z",
+    "totalTime": 8.049,
+    "status": "completed"
+  },
+  "Ajla": {
+    "startTime": "2025-01-06T00:50:33.982Z",
+    "totalTime": 0,
+    "status": "active"
+  }
+}
