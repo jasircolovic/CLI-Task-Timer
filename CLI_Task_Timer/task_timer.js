@@ -1,4 +1,3 @@
-
 const fs = require('fs'); // load the file system module to handle file operations
 const inquirer = require('inquirer'); // load the inquirer module for user prompts
 
@@ -36,6 +35,7 @@ const taskManager = {
         saveTasks(tasks); // save the updated tasks to file
         console.log(`Started task "${taskName}".`); // notify user that the task has started
     },
+    
     pause(taskName) { // pause an active task
         const tasks = loadTasks(); // load existing tasks
         if (!tasks[taskName] || tasks[taskName].status !== 'active') { // check if the task is not active
@@ -48,6 +48,21 @@ const taskManager = {
         tasks[taskName].status = 'paused'; // set the task status to paused
         saveTasks(tasks); // save the updated tasks to file
         console.log(`Paused task "${taskName}". Total time: ${tasks[taskName].totalTime.toFixed(2)} seconds.`); // notify user
+
+        
+     stop(taskName) { // stop an active task
+        const tasks = loadTasks(); // load existing tasks
+        if (!tasks[taskName] || tasks[taskName].status !== 'active') { // check if the task is not active
+            console.log(`Task "${taskName}" is not currently active.`); // notify user that the task is not active
+            return; // exit the function
+        }
+        const startTime = new Date(tasks[taskName].startTime); // get the start time of the task
+        const elapsedTime = (new Date() - startTime) / 1000; // calculate elapsed time in seconds
+        tasks[taskName].totalTime += elapsedTime; // add elapsed time to the total time
+        tasks[taskName].status = 'completed'; // set the task status to completed
+        saveTasks(tasks); // save the updated tasks to file
+        console.log(`Stopped task "${taskName}". Total time: ${tasks[taskName].totalTime.toFixed(2)} seconds.`); // notify user
+    },
 
     resume(taskName) { // resume a paused task
         const tasks = loadTasks(); // load existing tasks
