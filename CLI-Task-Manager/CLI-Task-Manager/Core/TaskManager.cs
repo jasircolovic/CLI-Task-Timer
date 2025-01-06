@@ -58,9 +58,22 @@ namespace CLI_Task_Timer.Core
             Console.WriteLine($"Task ID {taskId} deleted successfully.");
         }
 
-        // Optional getter for advanced usage
-        public TaskModel? GetTask(int taskId) => _tasks.FirstOrDefault(t => t.Id == taskId);
+        public void EditTask(int taskId, string newName, List<string> newTags)
+        {
+            var task = _tasks.FirstOrDefault(t => t.Id == taskId);
+            if (task == null)
+            {
+                Console.WriteLine($"No task found with ID {taskId}");
+                return;
+            }
 
-        public List<TaskModel> GetAllTasks() => _tasks;
+            task.Name = newName;
+            task.Tags = newTags;
+            task.LastModifiedDate = DateTime.Now;
+
+            Console.WriteLine($"Task ID {taskId} updated successfully.");
+        }
+
+    
     }
 }
