@@ -120,6 +120,17 @@ def pause(task_name):
   save_tasks(tasks)   
   print(f"Paused task \"{task_name}\". Total time: {tasks[task_name]['totalTime']:.2f} seconds.") 
 
+def resume(task_name):
+    tasks = load_tasks()
+    if task_name not in tasks or tasks[task_name]['status'] != 'paused':
+        print(f"Task \"{task_name}\" is not currently paused.")
+        return
+
+    tasks[task_name]['startTime'] = get_current_time()
+    tasks[task_name]['status'] = 'active'
+    save_tasks(tasks)
+    print(f"Resumed task \"{task_name}\".")
+  
 def status(task_name):
     """
     Print the status of a specific task, including up-to-date total time if it's active.
@@ -193,7 +204,14 @@ def main():
             sys.exit(1)
         task_name = " ".join(sys.argv[2:])
         pause(task_name)
-  
+      
+    elif command == 'resume':
+        if len(sys.argv) < 3:
+            print("Error: Missing task name.")
+            sys.exit(1)
+        task_name = " ".join(sys.argv[2:])
+        resume(task_name)  
+    
     elif command == 'status':
         if len(sys.argv) < 3:
             print("Error: Missing task name.")
