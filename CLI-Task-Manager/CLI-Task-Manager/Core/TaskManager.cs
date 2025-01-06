@@ -45,6 +45,19 @@ namespace CLI_Task_Timer.Core
             }
         }
 
+        public void DeleteTask(int taskId)
+        {
+            var task = _tasks.FirstOrDefault(t => t.Id == taskId);
+            if (task == null)
+            {
+                Console.WriteLine($"No task found with ID {taskId}");
+                return;
+            }
+
+            _tasks.Remove(task);
+            Console.WriteLine($"Task ID {taskId} deleted successfully.");
+        }
+
         // Optional getter for advanced usage
         public TaskModel? GetTask(int taskId) => _tasks.FirstOrDefault(t => t.Id == taskId);
 
