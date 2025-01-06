@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/CLI-Task-Manager.csproj": {}
+  },
+  "projects": {
+    "/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/CLI-Task-Manager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/CLI-Task-Manager.csproj",
+        "projectName": "CLI-Task-Manager",
+        "projectPath": "/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/CLI-Task-Manager.csproj",
+        "packagesPath": "/home/jasir_c/.nuget/packages/",
+        "outputPath": "/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/obj/",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "configFilePaths": [
+          "/home/jasir_c/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/bin/Debug/net8.0/CLI-Task-Manager
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/bin/Debug/net8.0/CLI-Task-Manager.deps.json
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/bin/Debug/net8.0/CLI-Task-Manager.runtimeconfig.json
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/bin/Debug/net8.0/CLI-Task-Manager.dll
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/bin/Debug/net8.0/CLI-Task-Manager.pdb
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/obj/Debug/net8.0/CLI-Task-Manager.GeneratedMSBuildEditorConfig.editorconfig
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/obj/Debug/net8.0/CLI-Task-Manager.AssemblyInfoInputs.cache
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/obj/Debug/net8.0/CLI-Task-Manager.AssemblyInfo.cs
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/obj/Debug/net8.0/CLI-Task-Manager.csproj.CoreCompileInputs.cache
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/obj/Debug/net8.0/CLI-Task-Manager.dll
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/obj/Debug/net8.0/refint/CLI-Task-Manager.dll
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/obj/Debug/net8.0/CLI-Task-Manager.pdb
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/obj/Debug/net8.0/CLI-Task-Manager.genruntimeconfig.cache
+/home/jasir_c/RiderProjects/CLI-Task-Manager/CLI-Task-Manager/obj/Debug/net8.0/ref/CLI-Task-Manager.dll
